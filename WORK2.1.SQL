@@ -14,4 +14,6 @@ where title = 'wings of fire';
 select * from `work2.1`
 where author <> 'paulo coelho';
 
+select * from `work2.1`
+where price > 350;
 
