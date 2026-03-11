@@ -63,3 +63,4 @@ select name,exam_status from employee join exam on employee.id=exam.employee_id 
 
 select name from employee where id NOT in (select employee_id from exam);
 
+select employee.name from employee LEFT JOIN exam on employee.id=exam.employee_id where employee.id not in (select employee_id from exam);
